@@ -4,6 +4,11 @@ let optPlace = {
     demand: true
 };
 
+
+// app --place Medellin
+// app -p Medellin
+// app get-weather --place Necocli
+// app get-weather -p Necocli
 const argv = require('yargs')
     .command('get-weather', 'Obtiene el estado del tiempo de una ciudad en específico', {
         place: optPlace
