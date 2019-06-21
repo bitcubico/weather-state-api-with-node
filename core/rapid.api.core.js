@@ -2,7 +2,7 @@
 const httpClient = require('axios');
 const isEmpty = require('is-empty');
 
-const urlBase = 'https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php';
+const urlBase = 'https://devru-latitude-longitude-find-v1.p.rapidapi.com';
 const headerBase = {
     'X-RapidAPI-Key': 'r6f8FUCLYdmshjSoHsKtiuGidM1hp1xT4EZjsnt41yjs0iFc7D'
 }
@@ -13,7 +13,7 @@ const SearchPlaceAsync = async(place) => {
 
     let placeEncoded = encodeURI(place);
 
-    const response = await httpClient.get(urlBase, {
+    const response = await httpClient.get(`${urlBase}/latlon.php`, {
         timeout: 2000,
         headers: headerBase,
         params: {
@@ -21,6 +21,7 @@ const SearchPlaceAsync = async(place) => {
         }
     });
 
+    console.log(response.data.Results);
     return response.data.Results;
 }
 

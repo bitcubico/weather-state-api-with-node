@@ -21,4 +21,4 @@ module.exports = {
     argv
 }
 
-console.log(argv);
+// console.log(argv);
