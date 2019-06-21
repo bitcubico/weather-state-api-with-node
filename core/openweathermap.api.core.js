@@ -25,7 +25,7 @@ const GetWeatherByCoordinatesAsync = async(latitude, longitude) => {
         }
     });
 
-    console.log(response);
+    // console.log(response);
     return response.data;
 }
 

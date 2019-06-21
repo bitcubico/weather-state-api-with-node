@@ -21,7 +21,7 @@ const SearchPlaceAsync = async(place) => {
         }
     });
 
-    console.log(response.data.Results);
+    // console.log(response.data.Results);
     return response.data.Results;
 }
 
