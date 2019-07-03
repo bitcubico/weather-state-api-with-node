@@ -1,6 +1,5 @@
 // https://www.npmjs.com/package/axios
 const httpClient = require('axios');
-const isEmpty = require('is-empty');
 
 const urlBase = 'https://api.openweathermap.org/data/2.5';
 const token = '71ca367d1b8f3136845d19400c79532b';
